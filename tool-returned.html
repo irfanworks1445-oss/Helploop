@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Tool Return</title>
+    <link rel="stylesheet" href="tool-returned.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Tool Return Content -->
+    <main class="container">
+
+        <div class="page-header">
+            <h1>Tool Return</h1>
+            <p>Inspect the returned tool and confirm receipt</p>
+        </div>
+
+        <section class="return-grid">
+
+            <!-- Left Column: Tool Info + Return Instructions -->
+            <div class="left-col">
+
+                <!-- Tool Card -->
+                <div class="tool-card">
+                    <img src="drill.png" alt="Cordless Drill" class="tool-img">
+
+                    <div class="tool-meta">
+                        <div class="tool-top">
+                            <h2>Cordless Drill</h2>
+                            <span class="due-badge">RETURN DUE</span>
+                        </div>
+                        <p class="renter-name">Rented by Rahul K</p>
+                        <p class="rental-dates">Rental: 12–13 Nov 2026</p>
+                        <p class="booking-id">Booking ID: HL-2048</p>
+                    </div>
+                </div>
+
+                <!-- Return Instructions Card -->
+                <div class="instructions-card">
+                    <h3>Return Instructions</h3>
+
+                    <ol class="steps-list">
+                        <li>
+                            <span class="step-circle">1</span>
+                            <span>Check that all parts and accessories are returned.</span>
+                        </li>
+                        <li>
+                            <span class="step-circle">2</span>
+                            <span>Compare the tool with its before-rental photos.</span>
+                        </li>
+                        <li>
+                            <span class="step-circle">3</span>
+                            <span>Upload clear photos of the returned tool.</span>
+                        </li>
+                        <li>
+                            <span class="step-circle">4</span>
+                            <span>Report damage or missing parts before confirming.</span>
+                        </li>
+                    </ol>
+
+                    <div class="warning-strip">
+                        Confirm only after you have physically received the tool.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Upload Photos + Issue + Security Deposit -->
+            <div class="right-col">
+
+                <!-- Upload Photos -->
+                <div class="upload-section">
+                    <h3>Upload Photos</h3>
+                    <p class="upload-sub">Add photos showing the tool's current condition.</p>
+
+                    <label class="upload-box">
+                        <input type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" multiple hidden>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6f8587" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="14" rx="2"/>
+                            <circle cx="8.5" cy="9" r="1.5"/>
+                            <polyline points="21 15 16 10 8 18"/>
+                            <line x1="12" y1="21" x2="12" y2="19"/>
+                            <polyline points="9.5 20.5 12 18 14.5 20.5"/>
+                        </svg>
+                        <span class="upload-cta">Tap to upload photos</span>
+                        <span class="upload-note">JPG or PNG · Add multiple photos if needed</span>
+                    </label>
+                </div>
+
+                <!-- Report Issue Card -->
+                <div class="issue-card">
+                    <div class="issue-left">
+                        <span class="exclaim-icon">!</span>
+                        <div>
+                            <h4>Is there any issue with the tool?</h4>
+                            <p>Report damage or missing parts with evidence.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="report-link">Report &rsaquo;</a>
+                </div>
+
+                <!-- Security Deposit Card -->
+                <div class="deposit-card">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    <div>
+                        <h4>Security Deposit</h4>
+                        <p>Refundable amount Credited to your bank account after tool return</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Bottom Confirmation Link Button -->
+        <div class="confirm-wrap">
+            <p class="confirm-caption">This confirms you have received the tool back.</p>
+            <a href="tool.html" class="confirm-btn">Confirm Tool Returned</a>
+            <p class="returned-note">This confirms you have returned the tool</p>
+        </div>
+
+    </main>
+
+</body>
+</html>

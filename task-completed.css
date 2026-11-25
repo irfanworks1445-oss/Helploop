@@ -1,0 +1,258 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.completed-container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 18px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.success-emblem {
+    width: 255px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.completed-container h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 3px;
+}
+
+.subtitle {
+    font-size: 11.5px;
+    font-weight: 500;
+    color: #3a5457;
+    margin-bottom: 18px;
+}
+
+/* Review Card */
+.review-card {
+    width: 100%;
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 16px;
+    padding: 18px 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.worker-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+}
+
+.worker-avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid #84c7a7;
+    flex-shrink: 0;
+}
+
+.worker-meta {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.rate-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #0c292d;
+    margin-bottom: 2px;
+}
+
+.worker-meta h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.rating-score {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-top: 2px;
+}
+
+.star {
+    color: #f4b400;
+}
+
+/* Star Row Box */
+.star-box {
+    width: 100%;
+    border: 1px solid #84c7a7;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 50px;
+    padding: 6px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.star-btn {
+    background: transparent;
+    border: none;
+    color: #f4b400;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.15s ease;
+}
+
+.star-btn:hover {
+    transform: scale(1.15);
+}
+
+/* Experience Input */
+.experience-input {
+    width: 100%;
+    border: 1px solid #84c7a7;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #0c292d;
+    resize: none;
+    outline: none;
+}
+
+.experience-input::placeholder {
+    color: #7c9294;
+}
+
+.experience-input:focus {
+    border-color: #1ba664;
+    background-color: #ffffff;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1ba664;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.92;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        padding: 14px 16px;
+    }
+
+    .star-box {
+        gap: 12px;
+    }
+}

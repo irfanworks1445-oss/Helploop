@@ -1,0 +1,233 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 26px 24px 50px;
+}
+
+/* Filter Pills */
+.filter-pills {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.filter-btn {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 26px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #0c292d;
+    color: #ffffff;
+    transition: opacity 0.2s ease;
+}
+
+.filter-btn.active {
+    background-color: #1ba664;
+    color: #ffffff;
+}
+
+.filter-btn:hover {
+    opacity: 0.92;
+}
+
+/* Task Cards List */
+.task-list {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.task-card {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 14px;
+    padding: 10px 16px 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    background-color: #ffffff;
+}
+
+.task-img {
+    width: 118px;
+    height: 82px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.task-middle {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-middle h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 4px;
+}
+
+.task-place {
+    font-size: 11.5px;
+    color: #6f8587;
+    margin-bottom: 6px;
+}
+
+.task-price {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #1ba664;
+}
+
+.task-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.status-pill {
+    font-size: 9.5px;
+    font-weight: 700;
+    padding: 2px 9px;
+    border-radius: 50px;
+}
+
+.status-pill.completed {
+    background-color: #d9f5e6;
+    color: #1ba664;
+}
+
+.task-dist {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #0c292d;
+}
+
+.task-time {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 540px) {
+    .task-card {
+        flex-wrap: wrap;
+    }
+
+    .task-img {
+        width: 96px;
+        height: 70px;
+    }
+
+    .task-right {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 6px;
+        border-top: 1px solid #dcebe4;
+    }
+}

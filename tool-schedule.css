@@ -1,0 +1,257 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 26px 24px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #0c292d;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+/* Tool Card */
+.tool-summary-card {
+    width: 100%;
+    max-width: 580px;
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.tool-thumb {
+    width: 98px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #b5d8c8;
+    background-color: #ffffff;
+    flex-shrink: 0;
+}
+
+.tool-info h2 {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 6px;
+}
+
+.meta-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #0c292d;
+    margin-bottom: 4px;
+}
+
+/* Form Section */
+.schedule-form {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.field-label {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.dt-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.picker-box {
+    background-color: rgba(240, 255, 248, 0.88);
+    border: 1px solid #84c7a7;
+    border-radius: 10px;
+    padding: 9px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.picker-box input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0c292d;
+    outline: none;
+}
+
+.picker-box:focus-within {
+    border-color: #1ba664;
+    background-color: #ffffff;
+}
+
+/* Use of the Tool Input */
+.use-input {
+    width: 100%;
+    padding: 11px 16px;
+    border-radius: 10px;
+    border: 1px solid #84c7a7;
+    background-color: rgba(240, 255, 248, 0.88);
+    font-size: 12.5px;
+    color: #0c292d;
+    outline: none;
+}
+
+.use-input::placeholder {
+    color: #849a9b;
+}
+
+.use-input:focus {
+    border-color: #1ba664;
+    background-color: #ffffff;
+}
+
+/* Publish Tool Button */
+.publish-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: #0c292d;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.publish-btn:hover {
+    opacity: 0.92;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .dt-row {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-summary-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tool-thumb {
+        width: 100%;
+        height: 140px;
+    }
+}

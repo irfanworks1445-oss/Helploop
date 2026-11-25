@@ -1,0 +1,312 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 22px 24px 40px;
+}
+
+/* Search Bar */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 560px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1px solid #96b8b0;
+    border-radius: 50px;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+    color: #0c292d;
+}
+
+/* Greeting Section */
+.greeting {
+    margin-bottom: 20px;
+}
+
+.greeting h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.greeting p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0c292d;
+    margin-top: 2px;
+}
+
+/* Main 2-Column Layout */
+.dashboard-grid {
+    display: flex;
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* Left Panel */
+.left-panel {
+    flex: 1;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Post a Task & My Tool Cards */
+.action-cards {
+    display: flex;
+    gap: 14px;
+}
+
+.action-card {
+    flex: 1;
+    padding: 20px 14px;
+    border-radius: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.action-card:hover {
+    transform: translateY(-2px);
+}
+
+.dark-card {
+    background-color: #0c292d;
+}
+
+.green-card {
+    background-color: #1ba664;
+}
+
+.action-icon {
+    margin-bottom: 8px;
+}
+
+.action-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.action-card p {
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+/* 4x2 Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.cat-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #84c7a7;
+    border-radius: 12px;
+    padding: 12px 6px;
+    text-decoration: none;
+    color: #0c292d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.cat-box:hover {
+    background-color: #ffffff;
+}
+
+.cat-box span {
+    font-size: 11.5px;
+    font-weight: 500;
+}
+
+/* Left Bottom Banner Box */
+.promo-banner {
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.promo-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+}
+
+/* Right Panel */
+.right-panel {
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1;
+    background-color: rgba(240, 255, 248, 0.72);
+    border: 1px solid #84c7a7;
+    border-radius: 16px;
+    padding: 26px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.feature-text h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 8px;
+}
+
+.feature-text p {
+    font-size: 14px;
+    color: #1c3a3e;
+    margin-bottom: 14px;
+}
+
+.explore-link {
+    text-decoration: none;
+    color: #1ba664;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.explore-link:hover {
+    text-decoration: underline;
+}
+
+.feature-img img {
+    width: 195px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Responsive for Mobile / Tablet */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-grid {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        max-width: 100%;
+    }
+}

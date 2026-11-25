@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Post a Task</title>
+    <link rel="stylesheet" href="post-task.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Post a Task Content -->
+    <main class="container">
+        <h1 class="page-title">Post a Task</h1>
+
+        <form action="#" method="POST" id="postTaskForm" class="task-form-grid">
+
+            <!-- Left Column -->
+            <div class="left-col">
+
+                <!-- Add Photos -->
+                <div class="field-group">
+                    <label class="field-label">Add Photos</label>
+                    <div class="photos-row">
+                        <img src="tv.png" alt="TV Wall Mount Sample 1" class="photo-thumb">
+                        <img src="tv.png" alt="TV Wall Mount Sample 2" class="photo-thumb">
+
+                        <label class="add-photo-box">
+                            <input type="file" accept="image/*" multiple hidden>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                            <span>Add Photo</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- What do you need help with? -->
+                <div class="field-group">
+                    <label for="task-title" class="field-label">What do you need help with ?</label>
+                    <input type="text" id="task-title" class="pill-input" value="TV Wall Mount Installation" required>
+                </div>
+
+                <!-- Category -->
+                <div class="field-group">
+                    <label for="task-category" class="field-label">Category</label>
+                    <div class="select-wrapper">
+                        <select id="task-category" class="pill-input select-input" required>
+                            <option value="" selected disabled>Select Category</option>
+                            <option value="home-repair">Home Repair</option>
+                            <option value="cleaning">Cleaning</option>
+                            <option value="moving">Moving</option>
+                            <option value="plumbing">Plumbing</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="electrical">Electrical</option>
+                            <option value="gardening">Gardening</option>
+                        </select>
+                        <svg class="select-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="field-group">
+                    <label for="task-desc" class="field-label">Description</label>
+                    <textarea id="task-desc" class="desc-textarea" rows="5">Need a 55-inch TV to be wall mounted. Wall is concrete. Need required tools</textarea>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-col">
+
+                <!-- Location -->
+                <div class="field-group">
+                    <label for="task-location" class="field-label">Location</label>
+                    <div class="input-with-icon">
+                        <input type="text" id="task-location" class="pill-input has-right-icon" value="Kakanad, Kochi, Kerala" required>
+                        <svg class="right-input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                            <circle cx="12" cy="11" r="2.2"/>
+                            <path d="M7 21h10"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Preferred Date & Time -->
+                <div class="field-group">
+                    <label class="field-label">Prefered Date &amp; Time</label>
+                    <div class="datetime-row">
+                        <div class="input-with-icon date-box">
+                            <svg class="left-input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#556b6d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            <input type="text" class="pill-input has-left-icon" value="12 Nov 2026">
+                        </div>
+
+                        <div class="input-with-icon time-box">
+                            <svg class="left-input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#556b6d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"/>
+                                <polyline points="12 7 12 12 15.5 14"/>
+                            </svg>
+                            <input type="text" class="pill-input has-left-icon" value="4:00 Pm">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wage -->
+                <div class="field-group">
+                    <label for="task-wage" class="field-label">Wage</label>
+                    <input type="text" id="task-wage" class="pill-input wage-input" value="&#8377;400">
+                </div>
+
+                <button type="submit" class="next-btn">Next</button>
+
+            </div>
+
+        </form>
+    </main>
+
+    <script>
+        document.getElementById("postTaskForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            window.location.href = "summery.html";
+        });
+    </script>
+
+</body>
+</html>

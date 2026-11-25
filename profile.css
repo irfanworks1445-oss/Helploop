@@ -1,0 +1,380 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 18px 24px 50px;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.profile-avatar {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #84c7a7;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.member-since {
+    font-size: 13px;
+    color: #556b6d;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #1ba664;
+    color: #ffffff;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 8px;
+}
+
+.edit-link {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1ba664;
+    text-decoration: none;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+/* Activity Stats */
+.activity-section {
+    max-width: 660px;
+    margin: 0 auto 28px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 10px;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+.section-sub {
+    font-size: 11.5px;
+    color: #556b6d;
+    margin-top: -6px;
+    margin-bottom: 12px;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.stat-box {
+    background-color: rgba(255, 255, 255, 0.88);
+    border: 1px solid #84c7a7;
+    border-radius: 12px;
+    padding: 12px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.stat-num {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #556b6d;
+}
+
+/* Role Banner */
+.role-banner {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 12px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.plus-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1ba664;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.role-text h4 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.role-text p {
+    font-size: 11.5px;
+    color: #556b6d;
+    margin-top: 2px;
+}
+
+/* Bottom 2-Column Grid */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.activity-card {
+    text-decoration: none;
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.88);
+    border: 1px solid #84c7a7;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-2px);
+    background-color: #ffffff;
+}
+
+.activity-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.activity-icon {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.activity-card h4 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.card-desc {
+    font-size: 11px;
+    color: #6f8587;
+    margin-top: 3px;
+}
+
+.card-cta {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #1ba664;
+}
+
+.badge-pill {
+    background-color: #d9f5e6;
+    color: #1ba664;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+
+/* Right Column Cards */
+.side-card {
+    text-decoration: none;
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.88);
+    border: 1px solid #84c7a7;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.side-card:hover {
+    transform: translateY(-2px);
+    background-color: #ffffff;
+}
+
+.side-card h4 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.chevron {
+    font-size: 18px;
+    color: #556b6d;
+}
+
+.other-heading {
+    margin-top: 18px;
+}
+
+.other-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.side-card.compact {
+    padding: 13px 16px;
+}
+
+.side-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .stats-row {
+        grid-template-columns: 1fr;
+    }
+}

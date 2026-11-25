@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Task Completed</title>
+    <link rel="stylesheet" href="task-completed.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Task Completed Content -->
+    <main class="completed-container">
+
+        <img src="Green DIY Success Emblem.png" alt="Task Completed" class="success-emblem">
+
+        <h1>Task Completed</h1>
+        <p class="subtitle">Your task has been completed successfully</p>
+
+        <!-- Rating & Review Card -->
+        <form action="#" method="POST" class="review-card">
+
+            <div class="worker-header">
+                <img src="alex.avif" alt="Adharsh R" class="worker-avatar">
+                <div class="worker-meta">
+                    <span class="rate-label">Rate Your Worker</span>
+                    <h2>Adharsh R</h2>
+                    <div class="rating-score">
+                        <span class="star">&#9733;</span>
+                        <span>4.8</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 Star Selector Box -->
+            <div class="star-box" role="radiogroup" aria-label="Rate worker out of 5 stars">
+                <button type="button" class="star-btn" aria-label="1 star">&#9733;</button>
+                <button type="button" class="star-btn" aria-label="2 stars">&#9733;</button>
+                <button type="button" class="star-btn" aria-label="3 stars">&#9733;</button>
+                <button type="button" class="star-btn" aria-label="4 stars">&#9733;</button>
+                <button type="button" class="star-btn" aria-label="5 stars">&#9733;</button>
+            </div>
+
+            <!-- Experience Input Box -->
+            <textarea class="experience-input" rows="2" placeholder="Type Your Experience"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 22px 24px 50px;
+}
+
+/* Search Bar */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 560px;
+    background-color: rgba(255, 255, 255, 0.94);
+    border: 1px solid #96b8b0;
+    border-radius: 50px;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+    color: #0c292d;
+}
+
+/* Filter Pills */
+.filter-pills {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    border: none;
+    border-radius: 50px;
+    padding: 8px 22px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #0c292d;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.filter-btn.active {
+    background-color: #1ba664;
+    color: #ffffff;
+}
+
+.filter-btn:hover {
+    opacity: 0.92;
+}
+
+/* 3-Column Tasks Grid */
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* Task Card */
+.task-card {
+    background-color: rgba(240, 255, 248, 0.85);
+    border: 1px solid #84c7a7;
+    border-radius: 14px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    background-color: #ffffff;
+}
+
+.task-img {
+    width: 104px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.task-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-info h3 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-meta,
+.task-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.task-meta span:first-child {
+    color: #2f5256;
+}
+
+.task-meta span:last-child {
+    color: #0c292d;
+    font-weight: 600;
+}
+
+.price {
+    color: #1ba664;
+    font-weight: 700;
+    font-size: 12.5px;
+}
+
+.time {
+    color: #0c292d;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+    .tasks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 640px) {
+    .tasks-grid {
+        grid-template-columns: 1fr;
+    }
+}

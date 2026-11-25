@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Rental Requests Confirmed</title>
+    <link rel="stylesheet" href="rental-confirmed.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Confirmed Rental Requests Content -->
+    <main class="container">
+
+        <div class="page-header">
+            <h1>Rental Requests</h1>
+            <p>Review and respond to incoming requests</p>
+        </div>
+
+        <!-- Tabs: Pending (2) / Confirmed -->
+        <div class="tabs-wrap">
+            <div class="tabs-pill">
+                <a href="rental-requests.html" class="tab-btn">Pending (2)</a>
+                <a href="rental-confirmed.html" class="tab-btn active">Confirmed</a>
+            </div>
+        </div>
+
+        <!-- Two Confirmed Cards -->
+        <section class="requests-grid">
+
+            <!-- Confirmed 1: Rahul K -->
+            <div class="request-card">
+                <div class="card-top">
+                    <h2>Rahul K</h2>
+                    <span class="confirmed-badge">CONFIRMED</span>
+                </div>
+
+                <div class="field-block">
+                    <span class="field-label">Rented tool</span>
+                    <strong class="field-value">Cordless Drill</strong>
+                </div>
+
+                <div class="field-block">
+                    <span class="field-label">Rental period</span>
+                    <strong class="field-value">12–13 Nov · 2 days</strong>
+                </div>
+
+                <div class="total-row">
+                    <span class="total-label">Rental total</span>
+                    <strong class="total-price">&#8377;500</strong>
+                </div>
+
+                <div class="field-block pickup-block">
+                    <span class="field-label">Pickup arrangement</span>
+                    <strong class="field-value">Pickup from your location</strong>
+                </div>
+
+                <div class="card-actions">
+                    <a href="messages.html" class="msg-btn">Message</a>
+                    <a href="tool-return-confirm.html" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+            <!-- Confirmed 2: Meera P -->
+            <div class="request-card">
+                <div class="card-top">
+                    <h2>Meera P</h2>
+                    <span class="confirmed-badge">CONFIRMED</span>
+                </div>
+
+                <div class="field-block">
+                    <span class="field-label">Rented tool</span>
+                    <strong class="field-value">Aluminium Ladder</strong>
+                </div>
+
+                <div class="field-block">
+                    <span class="field-label">Rental period</span>
+                    <strong class="field-value">14 Nov · 1 day</strong>
+                </div>
+
+                <div class="total-row">
+                    <span class="total-label">Rental total</span>
+                    <strong class="total-price">&#8377;150</strong>
+                </div>
+
+                <div class="field-block pickup-block">
+                    <span class="field-label">Pickup arrangement</span>
+                    <strong class="field-value">Delivery to renter</strong>
+                </div>
+
+                <div class="card-actions">
+                    <a href="messages.html" class="msg-btn">Message</a>
+                    <a href="rent.html" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Bottom Handover Reminder -->
+        <div class="footer-note">
+            <div class="note-title">
+                <span class="info-circle">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="12" y1="7" x2="12" y2="13"/>
+                        <circle cx="12" cy="17" r="1.2" fill="#1ba664" stroke="none"/>
+                    </svg>
+                </span>
+                <strong>Before handing over</strong>
+            </div>
+            <p>Check renter details and tool condition.</p>
+        </div>
+
+    </main>
+
+</body>
+</html>

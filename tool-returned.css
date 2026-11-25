@@ -1,0 +1,428 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 24px 24px 50px;
+}
+
+.page-header {
+    margin-bottom: 18px;
+}
+
+.page-header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.page-header p {
+    font-size: 11px;
+    color: #7c9294;
+    margin-top: 2px;
+}
+
+/* 2-Column Layout */
+.return-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.left-col,
+.right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Tool Summary Card */
+.tool-card {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tool-img {
+    width: 106px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #b5d8c8;
+    background-color: #ffffff;
+    flex-shrink: 0;
+}
+
+.tool-meta {
+    flex: 1;
+    min-width: 0;
+}
+
+.tool-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.tool-top h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.due-badge {
+    background-color: #d9f5e6;
+    color: #1ba664;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 50px;
+    letter-spacing: 0.3px;
+    flex-shrink: 0;
+}
+
+.renter-name {
+    font-size: 12px;
+    color: #6f8587;
+    margin-bottom: 4px;
+}
+
+.rental-dates {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0c292d;
+    margin-bottom: 4px;
+}
+
+.booking-id {
+    font-size: 11px;
+    color: #7c9294;
+}
+
+/* Return Instructions Card */
+.instructions-card {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 14px;
+    padding: 18px 20px;
+}
+
+.instructions-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 14px;
+}
+
+.steps-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.steps-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: #0c292d;
+}
+
+.step-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #d9f5e6;
+    color: #1ba664;
+    font-size: 10px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.warning-strip {
+    background-color: #fdf1e2;
+    color: #a46b2b;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    padding: 9px 14px;
+    border-radius: 8px;
+}
+
+/* Upload Photos Section */
+.upload-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-section h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 2px;
+}
+
+.upload-sub {
+    font-size: 11px;
+    color: #7c9294;
+    margin-bottom: 10px;
+}
+
+.upload-box {
+    background-color: rgba(240, 255, 248, 0.78);
+    border: 1.5px dashed #84c7a7;
+    border-radius: 14px;
+    padding: 28px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.upload-box:hover {
+    background-color: #ffffff;
+    border-color: #1ba664;
+}
+
+.upload-cta {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.upload-note {
+    font-size: 10.5px;
+    color: #7c9294;
+}
+
+/* Report Issue Card */
+.issue-card {
+    background-color: rgba(255, 250, 244, 0.92);
+    border: 1px solid #f0c99e;
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.issue-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.exclaim-icon {
+    color: #e37c2d;
+    font-size: 18px;
+    font-weight: 800;
+    width: 18px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.issue-left h4 {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.issue-left p {
+    font-size: 10.5px;
+    color: #7c9294;
+    margin-top: 2px;
+}
+
+.report-link {
+    text-decoration: none;
+    color: #e37c2d;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.report-link:hover {
+    text-decoration: underline;
+}
+
+/* Security Deposit Card */
+.deposit-card {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.deposit-card h4 {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.deposit-card p {
+    font-size: 10.5px;
+    color: #7c9294;
+    margin-top: 2px;
+}
+
+/* Bottom Confirmation Button */
+.confirm-wrap {
+    max-width: 680px;
+    margin: 26px auto 0;
+    text-align: center;
+}
+
+.confirm-caption {
+    font-size: 11px;
+    color: #7c9294;
+    margin-bottom: 10px;
+}
+
+.confirm-btn {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: #1ba664;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.confirm-btn:hover {
+    opacity: 0.92;
+}
+
+.returned-note {
+    font-size: 11px;
+    color: #7c9294;
+    margin-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .return-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tool-img {
+        width: 100%;
+        height: 150px;
+    }
+}

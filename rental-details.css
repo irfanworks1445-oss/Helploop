@@ -1,0 +1,373 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 24px 24px 50px;
+}
+
+.page-header {
+    margin-bottom: 18px;
+}
+
+.page-header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.page-header p {
+    font-size: 11.5px;
+    color: #6f8587;
+    margin-top: 2px;
+}
+
+/* 2-Column Layout */
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.left-col,
+.right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Tool Summary Card */
+.tool-card {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 14px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tool-img {
+    width: 104px;
+    height: 98px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #b5d8c8;
+    background-color: #ffffff;
+    flex-shrink: 0;
+}
+
+.tool-meta h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.tool-meta p {
+    font-size: 12px;
+    color: #556b6d;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.confirmed-pill {
+    display: inline-block;
+    background-color: #d9f5e6;
+    color: #1ba664;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+/* Section Headings & Boxes */
+.section-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-block h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.info-box {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 14px;
+    padding: 16px 20px;
+}
+
+/* Renter Box */
+.renter-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.renter-box h4 {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.renter-sub {
+    font-size: 12px;
+    color: #6f8587;
+    margin-top: 4px;
+}
+
+.star {
+    color: #f4b400;
+}
+
+.msg-link {
+    text-decoration: none;
+    color: #1ba664;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.msg-link:hover {
+    text-decoration: underline;
+}
+
+/* Schedule Box */
+.schedule-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.schedule-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sched-label {
+    font-size: 12px;
+    color: #6f8587;
+}
+
+.sched-val {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+/* Payment Breakdown Box */
+.payment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pay-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pay-label {
+    font-size: 12.5px;
+    color: #6f8587;
+}
+
+.pay-val {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.pay-total-label {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.pay-total-val {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #1ba664;
+}
+
+/* Upload Images Dashed Box */
+.upload-dropzone {
+    background-color: rgba(240, 255, 248, 0.75);
+    border: 1.5px dashed #84c7a7;
+    border-radius: 14px;
+    padding: 26px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.upload-dropzone:hover {
+    background-color: #ffffff;
+    border-color: #1ba664;
+}
+
+.upload-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.upload-hint {
+    font-size: 10.5px;
+    color: #7c9294;
+}
+
+/* Bottom Actions */
+.bottom-actions {
+    max-width: 560px;
+    margin: 28px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.handover-btn {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #1ba664;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.handover-btn:hover {
+    opacity: 0.92;
+}
+
+.issue-link {
+    text-decoration: none;
+    color: #d94352;
+    font-size: 12.5px;
+    font-weight: 700;
+}
+
+.issue-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tool-img {
+        width: 100%;
+        height: 150px;
+    }
+}

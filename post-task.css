@@ -1,0 +1,302 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 26px 24px 50px;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 22px;
+}
+
+/* Two Column Form Grid */
+.task-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    align-items: start;
+}
+
+.left-col,
+.right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+/* Photo Thumbnails & Add Photo Box */
+.photos-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.photo-thumb {
+    width: 96px;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #84c7a7;
+}
+
+.add-photo-box {
+    width: 96px;
+    height: 92px;
+    border-radius: 12px;
+    border: 1px solid #84c7a7;
+    background-color: rgba(255, 255, 255, 0.72);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-photo-box:hover {
+    background-color: #ffffff;
+}
+
+.add-photo-box span {
+    font-size: 11px;
+    color: #556b6d;
+    font-weight: 500;
+}
+
+/* Pill Inputs */
+.pill-input {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 1px solid #84c7a7;
+    background-color: rgba(240, 255, 248, 0.85);
+    font-size: 13.5px;
+    color: #0c292d;
+    outline: none;
+}
+
+.pill-input:focus,
+.desc-textarea:focus {
+    border-color: #1ba664;
+    background-color: #ffffff;
+}
+
+/* Select Dropdown */
+.select-wrapper {
+    position: relative;
+}
+
+.select-input {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 40px;
+    color: #6f8587;
+    cursor: pointer;
+}
+
+.select-arrow {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Description Textarea */
+.desc-textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #84c7a7;
+    background-color: rgba(240, 255, 248, 0.85);
+    font-size: 13.5px;
+    color: #0c292d;
+    line-height: 1.45;
+    resize: vertical;
+    outline: none;
+}
+
+/* Inputs with Icons */
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.has-right-icon {
+    padding-right: 42px;
+}
+
+.right-input-icon {
+    position: absolute;
+    right: 14px;
+    pointer-events: none;
+}
+
+.has-left-icon {
+    padding-left: 38px;
+}
+
+.left-input-icon {
+    position: absolute;
+    left: 14px;
+    pointer-events: none;
+}
+
+/* Date & Time Row */
+.datetime-row {
+    display: flex;
+    gap: 12px;
+}
+
+.date-box {
+    flex: 1.25;
+}
+
+.time-box {
+    flex: 1;
+}
+
+/* Wage Box Width */
+.wage-input {
+    max-width: 170px;
+}
+
+/* Next Button */
+.next-btn {
+    margin-top: 8px;
+    width: 100%;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0c292d;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.next-btn:hover {
+    background-color: #163f45;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .task-form-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .datetime-row {
+        flex-direction: column;
+    }
+
+    .wage-input {
+        max-width: 100%;
+    }
+}

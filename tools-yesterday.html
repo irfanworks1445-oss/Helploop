@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Tools</title>
+    <link rel="stylesheet" href="tools-yesterday.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Tools Content -->
+    <main class="container">
+
+        <!-- Filter Pills: Today / Yesterday -->
+        <div class="filter-pills">
+            <a href="tools-today.html" class="filter-btn">Today</a>
+            <a href="tools-yesterday.html" class="filter-btn active">Yesterday</a>
+        </div>
+
+        <!-- 2-Column Returned Tools Grid -->
+        <section class="tools-grid">
+
+            <!-- Card 1: Ladder Large -->
+            <div class="tool-card">
+                <img src="ladder.png" alt="Ladder Large" class="tool-img">
+
+                <div class="tool-info">
+                    <h2>Ladder Large</h2>
+                    <p class="tool-model">Stinger L305</p>
+                    <strong class="tool-rate">&#8377;60 /day</strong>
+                    <span class="tool-dist">5Km</span>
+                </div>
+
+                <span class="status-pill returned">Returned</span>
+            </div>
+
+            <!-- Card 2: Pressure Washer -->
+            <div class="tool-card">
+                <img src="washer.png" alt="Pressure Washer" class="tool-img">
+
+                <div class="tool-info">
+                    <h2>Pressure Washer</h2>
+                    <p class="tool-model">StarQ ST5</p>
+                    <strong class="tool-rate">&#8377;400 /day</strong>
+                    <span class="tool-dist">4Km</span>
+                </div>
+
+                <span class="status-pill returned">Returned</span>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

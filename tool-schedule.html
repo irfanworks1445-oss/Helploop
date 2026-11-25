@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Tool</title>
+    <link rel="stylesheet" href="tool-schedule.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Tool Schedule Content -->
+    <main class="container">
+        <h1 class="page-title">Tool</h1>
+
+        <!-- Tool Summary Card -->
+        <section class="tool-summary-card">
+            <img src="drill.png" alt="Cordless Drill" class="tool-thumb">
+
+            <div class="tool-info">
+                <h2>Cordless Drill</h2>
+
+                <div class="meta-line">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.2 2.2-2.2-2.2 2.4-3z"/>
+                    </svg>
+                    <span>Drill Machine</span>
+                </div>
+
+                <div class="meta-line">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                        <circle cx="12" cy="11" r="2.2"/>
+                        <path d="M7 21h10"/>
+                    </svg>
+                    <span>Kakanad, Kochi, Kerala</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule & Usage Form -->
+        <form action="#" method="POST" class="schedule-form">
+
+            <!-- Pickup Date & Time -->
+            <div class="field-group">
+                <span class="field-label">Pickup Date &amp; Time</span>
+                <div class="dt-row">
+                    <div class="picker-box">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        <input type="text" value="12 Nov 2026" aria-label="Pickup Date">
+                    </div>
+
+                    <div class="picker-box">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9"/>
+                            <polyline points="12 7 12 12 15.5 14"/>
+                        </svg>
+                        <input type="text" value="4:00 Pm" aria-label="Pickup Time">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Return Date & Time -->
+            <div class="field-group">
+                <span class="field-label">Return Date &amp; Time</span>
+                <div class="dt-row">
+                    <div class="picker-box">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        <input type="text" value="12 Nov 2026" aria-label="Return Date">
+                    </div>
+
+                    <div class="picker-box">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9"/>
+                            <polyline points="12 7 12 12 15.5 14"/>
+                        </svg>
+                        <input type="text" value="4:00 Pm" aria-label="Return Time">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Use of the Tool -->
+            <div class="field-group">
+                <label for="tool-use" class="field-label">Use of the Tool</label>
+                <input type="text" id="tool-use" class="use-input" placeholder="Furniture Fitting">
+            </div>
+
+            <!-- Publish Tool Link Button -->
+            <a href="tool-payment.html" class="publish-btn">Book Tool</a>
+
+        </form>
+    </main>
+
+</body>
+</html>

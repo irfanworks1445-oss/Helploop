@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Confirm Task</title>
+    <link rel="stylesheet" href="confirm-task.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Confirm Task Content -->
+    <main class="container">
+
+        <h1 class="page-title">TV Wall Mount Installation</h1>
+
+        <!-- Task Preview Photos -->
+        <div class="photos-row">
+            <img src="tv.png" alt="TV Wall Mount Preview 1" class="preview-img">
+            <img src="tv.png" alt="TV Wall Mount Preview 2" class="preview-img">
+        </div>
+
+        <!-- Verification Note Box -->
+        <div class="note-box">
+            <h2>Note:</h2>
+            <p>Before confirming that the worker has completed the task, please verify the work and upload photos for review from our side. These photos will serve as proof and can be used as a reference in case any issues arise later.</p>
+        </div>
+
+        <!-- Upload Photos Section -->
+        <section class="upload-section">
+            <h2>Upload Photos</h2>
+            <p class="upload-sub">Add photos showing the current condition.</p>
+
+            <label class="upload-dropzone">
+                <input type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" multiple hidden>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6f8587" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="14" rx="2"/>
+                    <circle cx="8.5" cy="9" r="1.5"/>
+                    <polyline points="21 15 16 10 8 18"/>
+                    <line x1="12" y1="21" x2="12" y2="19"/>
+                    <polyline points="9.5 20.5 12 18 14.5 20.5"/>
+                </svg>
+                <span class="upload-cta">Tap to upload photos</span>
+                <span class="upload-hint">JPG or PNG · Add multiple photos if needed</span>
+            </label>
+        </section>
+
+        <!-- Confirm Button -->
+         <a href="task-completed.html">
+        <div class="confirm-wrap" >
+            
+            <button type="button" class="confirm-btn">Confirm</button>
+         
+            
+        </div>
+        </a>
+
+    </main>
+
+</body>
+</html>

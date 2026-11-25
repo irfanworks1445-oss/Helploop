@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Task Status</title>
+    <link rel="stylesheet" href="worker-task-status.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Worker Task Status Content -->
+    <main class="container">
+
+        <h1 class="task-title">TV Wall Mount Installation</h1>
+
+        <!-- Task Preview Photos -->
+        <div class="photos-row">
+            <img src="tv.png" alt="TV Wall Mount View 1" class="status-photo">
+            <img src="tv.png" alt="TV Wall Mount View 2" class="status-photo">
+        </div>
+
+        <!-- Status Timeline Grid (2 Columns) -->
+        <section class="status-grid">
+
+            <!-- Left Column -->
+            <div class="status-col">
+
+                <!-- 1. Task Accepted -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="check-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <h3>Task Accepted</h3>
+                                <p>Your task has been accepted successfully.</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge completed">Completed</span>
+                    </div>
+                </div>
+
+                <!-- 2. Going to the location -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="check-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <h3>Going to the location</h3>
+                                <p>Click here while you are going</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge completed">Completed</span>
+                    </div>
+
+                    <div class="card-action-center">
+                        <a href="https://maps.google.com/?q=Kakanad,Kochi,Kerala" target="_blank" class="map-btn">Location on Google Map</a>
+                    </div>
+                </div>
+
+                <!-- 3. Work Started -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="empty-circle"></span>
+                            <div>
+                                <h3>Work Started</h3>
+                                <p>Click here when you start work</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge upcoming">Upcoming</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="status-col">
+
+                <!-- 4. Waiting for Confirmation (With Photo Upload) -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="empty-circle"></span>
+                            <div>
+                                <h3>Waiting for Confirmation</h3>
+                                <p>The Worker Waiting for your confirmation</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge pending">Pending</span>
+                    </div>
+
+                    <label class="upload-box">
+                        <input type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" multiple hidden>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f8587" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="14" rx="2"/>
+                            <circle cx="8.5" cy="9" r="1.5"/>
+                            <polyline points="21 15 16 10 8 18"/>
+                            <line x1="12" y1="21" x2="12" y2="19"/>
+                            <polyline points="9.5 20.5 12 18 14.5 20.5"/>
+                        </svg>
+                        <span class="upload-title">Tap to upload photos</span>
+                        <span class="upload-hint">JPG or PNG · Add multiple photos if needed</span>
+                    </label>
+
+                    <div class="card-action-center">
+                        <a href="task-posted-status.html" class="confirm-btn">Confirm</a>
+                    </div>
+                </div>
+
+                <!-- 5. Waiting for Confirmation (Task Poster) -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="empty-circle"></span>
+                            <div>
+                                <h3>Waiting for Confirmation</h3>
+                                <p>Waiting for task poster confirmation</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge pending">Pending</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

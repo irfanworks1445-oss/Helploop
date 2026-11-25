@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Tasks</title>
+    <link rel="stylesheet" href="tasks-yesterday.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Tasks Content -->
+    <main class="container">
+
+        <!-- Filter Pills: Today / Yesterday -->
+        <div class="filter-pills">
+            <a href="tasks-history.html" class="filter-btn active">Today</a>
+            <a href="tasks-completed-yesterday.html" class="filter-btn">Yesterday</a>
+        </div>
+
+        <!-- Task Cards List -->
+        <section class="task-list">
+            <a href="worker-task-status.html">
+
+            <!-- Card 1: TV Wall Mount Installation -->
+             
+            <div class="task-card">
+                <img src="tv.png" alt="TV Wall Mount Installation" class="task-img">
+
+                <div class="task-middle">
+                    <h2>TV Wall Mount Installation</h2>
+                    <p class="task-place">Eranankulam</p>
+                    <strong class="task-price">&#8377;600</strong>
+                </div>
+
+                <div class="task-right">
+                    <span class="status-pill pending">Pending</span>
+                    <span class="task-dist">2Km</span>
+                    <span class="task-time">4:00 pm</span>
+                </div>
+            </div>
+</a>
+            <!-- Card 2: Ceiling Fan Installation -->
+            <div class="task-card">
+                <img src="fan.png" alt="Ceiling Fan Installation" class="task-img">
+
+                <div class="task-middle">
+                    <h2>Ceiling Fan Installation</h2>
+                    <p class="task-place">Kaloor</p>
+                    <strong class="task-price">&#8377;500</strong>
+                </div>
+
+                <div class="task-right">
+                    <span class="status-pill completed">Completed</span>
+                    <span class="task-dist">8Km</span>
+                    <span class="task-time">Tomorrow</span>
+                </div>
+            </div>
+
+            <!-- Card 3: AC Cleaning -->
+            <div class="task-card">
+                <img src="ac.png" alt="AC Cleaning" class="task-img">
+
+                <div class="task-middle">
+                    <h2>AC Cleaning</h2>
+                    <p class="task-place">Kadavanthra</p>
+                    <strong class="task-price">&#8377;1200</strong>
+                </div>
+
+                <div class="task-right">
+                    <span class="status-pill completed">Completed</span>
+                    <span class="task-dist">6Km</span>
+                    <span class="task-time">Saturday</span>
+                </div>
+            </div>
+
+            <!-- Card 4: Kitchen Sink Pipe Repair -->
+            <div class="task-card">
+                <img src="pipe.png" alt="Kitchen Sink Pipe Repair" class="task-img">
+
+                <div class="task-middle">
+                    <h2>Kitchen Sink Pipe Repair</h2>
+                    <p class="task-place">Panampilly Nagar</p>
+                    <strong class="task-price">&#8377;500</strong>
+                </div>
+
+                <div class="task-right">
+                    <span class="status-pill completed">Completed</span>
+                    <span class="task-dist">5Km</span>
+                    <span class="task-time">Monday</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

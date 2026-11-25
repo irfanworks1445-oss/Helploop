@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Rental Earnings</title>
+    <link rel="stylesheet" href="rental-earnings.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Rental Earnings Content -->
+    <main class="container">
+
+        <section class="earnings-grid">
+
+            <!-- Left Column -->
+            <div class="left-col">
+                <div class="page-header">
+                    <h1>Rental Earnings</h1>
+                    <p>Track income from your listed tools</p>
+                </div>
+
+                <!-- Green Total Earnings Card -->
+                <div class="total-card">
+                    <span class="total-label">Total Earnings</span>
+                    <div class="total-amount">&#8377;3,240</div>
+                    <p class="available-text">Available to withdraw &#8377;2,400</p>
+                </div>
+
+                <!-- This Month & Pending Boxes -->
+                <div class="sub-stats">
+                    <div class="sub-box">
+                        <span class="sub-label">This month</span>
+                        <strong class="sub-value">&#8377;840</strong>
+                    </div>
+
+                    <div class="sub-box">
+                        <span class="sub-label">Pending</span>
+                        <strong class="sub-value">&#8377;500</strong>
+                    </div>
+                </div>
+
+                <!-- Withdraw Button -->
+                <button type="button" class="withdraw-btn">Withdraw Earnings</button>
+            </div>
+
+            <!-- Right Column: Recent Transactions -->
+            <div class="right-col">
+                <h2 class="tx-heading">Recent Transactions</h2>
+
+                <div class="tx-list">
+                    <!-- 1 -->
+                    <div class="tx-card">
+                        <span class="rupee-badge">&#8377;</span>
+                        <div class="tx-meta">
+                            <h3>Cordless Drill rental</h3>
+                            <p>Rahul K · 12 Nov</p>
+                        </div>
+                        <span class="tx-amount credit">+ &#8377;500</span>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="tx-card">
+                        <span class="rupee-badge">&#8377;</span>
+                        <div class="tx-meta">
+                            <h3>Ladder rental</h3>
+                            <p>Meera P · 08 Nov</p>
+                        </div>
+                        <span class="tx-amount credit">+ &#8377;150</span>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="tx-card">
+                        <span class="rupee-badge">&#8377;</span>
+                        <div class="tx-meta">
+                            <h3>Pressure Washer rental</h3>
+                            <p>Arun S · 02 Nov</p>
+                        </div>
+                        <span class="tx-amount credit">+ &#8377;800</span>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="tx-card">
+                        <span class="rupee-badge">&#8377;</span>
+                        <div class="tx-meta">
+                            <h3>Withdrawal</h3>
+                            <p>UPI · 01 Nov</p>
+                        </div>
+                        <span class="tx-amount debit">- &#8377;1,000</span>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="tx-card">
+                        <span class="rupee-badge">&#8377;</span>
+                        <div class="tx-meta">
+                            <h3>Cordless Drill rental</h3>
+                            <p>Rahul K · 12 Nov</p>
+                        </div>
+                        <span class="tx-amount credit">+ &#8377;500</span>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="tx-card">
+                        <span class="rupee-badge">&#8377;</span>
+                        <div class="tx-meta">
+                            <h3>Ladder rental</h3>
+                            <p>Meera P · 08 Nov</p>
+                        </div>
+                        <span class="tx-amount credit">+ &#8377;150</span>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="tx-card">
+                        <span class="rupee-badge">&#8377;</span>
+                        <div class="tx-meta">
+                            <h3>Pressure Washer rental</h3>
+                            <p>Arun S · 02 Nov</p>
+                        </div>
+                        <span class="tx-amount credit">+ &#8377;800</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

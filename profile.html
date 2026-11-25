@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item active">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Profile Content -->
+    <main class="container">
+
+        <h1 class="page-heading">Profile</h1>
+
+        <!-- Top User Info -->
+        <section class="profile-header">
+            <img src="alex.avif" alt="Adharsh R" class="profile-avatar">
+            <h2 class="user-name">Adharsh R</h2>
+            <p class="member-since">Member since 2026</p>
+
+            <div class="verified-badge">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span>Verified Member</span>
+            </div>
+
+            <a href="#" class="edit-link">Edit Profile</a>
+        </section>
+
+        <!-- Your Activity -->
+        <section class="activity-section">
+            <h3 class="section-title center">Your Activity</h3>
+
+            <div class="stats-row">
+                <div class="stat-box">
+                    <span class="stat-num">4</span>
+                    <span class="stat-label">Tasks posted</span>
+                </div>
+
+                <div class="stat-box">
+                    <span class="stat-num">8</span>
+                    <span class="stat-label">Jobs completed</span>
+                </div>
+
+                <div class="stat-box">
+                    <span class="stat-num">6</span>
+                    <span class="stat-label">Tools listed</span>
+                </div>
+            </div>
+
+            <!-- Role Banner -->
+            <div class="role-banner">
+                <div class="plus-circle">+</div>
+                <div class="role-text">
+                    <h4>One account. Every role.</h4>
+                    <p>Post tasks, complete jobs, and rent out tools.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Two Columns: Activities + Account/Other -->
+        <section class="bottom-grid">
+
+            <!-- Left Column: Your HELPLOOP Activities -->
+            <div class="activities-col">
+                <h3 class="section-title">Your HELPLOOP Activities</h3>
+                <p class="section-sub">Open any section to manage that activity.</p>
+
+                <div class="activity-list">
+                    <!-- Task Poster -->
+                    <a href="tasks-history.html" class="activity-card">
+                        <div class="activity-left">
+                            <div class="activity-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="4" y="3" width="14" height="18" rx="2"/>
+                                    <line x1="8" y1="8" x2="14" y2="8"/>
+                                    <line x1="8" y1="12" x2="12" y2="12"/>
+                                    <circle cx="18" cy="18" r="4" fill="#ffffff"/>
+                                    <line x1="18" y1="16.5" x2="18" y2="19.5"/>
+                                    <line x1="16.5" y1="18" x2="19.5" y2="18"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>As a Task Poster</h4>
+                                <p class="card-desc">Tasks you posted · Track workers · Payments</p>
+                                <span class="card-cta">My Tasks</span>
+                            </div>
+                        </div>
+                        <span class="badge-pill">4 posts</span>
+                    </a>
+
+                    <!-- Task Worker -->
+                    <a href="as-a-worker.html" class="activity-card">
+                        <div class="activity-left">
+                            <div class="activity-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="5" y="3" width="14" height="18" rx="2"/>
+                                    <line x1="9" y1="8" x2="15" y2="8"/>
+                                    <line x1="9" y1="12" x2="15" y2="12"/>
+                                    <line x1="9" y1="16" x2="13" y2="16"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>As a Task Worker</h4>
+                                <p class="card-desc">Accepted jobs · Work status · Earnings</p>
+                                <span class="card-cta">My Work</span>
+                            </div>
+                        </div>
+                        <span class="badge-pill">8 done</span>
+                    </a>
+
+                    <!-- Tool Owner -->
+                    <a href="tool-owner.html" class="activity-card">
+                        <div class="activity-left">
+                            <div class="activity-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 7h10v5H5z"/>
+                                    <path d="M15 8.5h3v2h-3"/>
+                                    <path d="M8 12v4h2.5v-4"/>
+                                    <path d="M13 18h7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>As a Tool Owner</h4>
+                                <p class="card-desc">Listed tools · Rental requests · Rental earnings</p>
+                                <span class="card-cta">My Tools &amp; Earnings</span>
+                            </div>
+                        </div>
+                        <span class="badge-pill">6 tools</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Account & Other -->
+            <div class="side-col">
+                <h3 class="section-title">Account</h3>
+
+                <a href="#" class="side-card">
+                    <div>
+                        <h4>Payments &amp; Wallet</h4>
+                        <p class="card-desc">Transactions, balance and refunds</p>
+                    </div>
+                    <span class="chevron">&rsaquo;</span>
+                </a>
+
+                <h3 class="section-title other-heading">Other</h3>
+
+                <div class="other-list">
+                    <a href="#" class="side-card compact">
+                        <div class="side-left">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/>
+                            </svg>
+                            <h4>Saved Items</h4>
+                        </div>
+                    </a>
+
+                    <a href="#" class="side-card compact">
+                        <div class="side-left">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.5-2 2-2 3.5"/>
+                                <circle cx="12" cy="17" r="0.8" fill="#0c292d"/>
+                            </svg>
+                            <h4>Help &amp; Support</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

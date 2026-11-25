@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Rent</title>
+    <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Rent Content -->
+    <main class="container">
+        <h1 class="page-title">Rent</h1>
+
+        <section class="rent-grid">
+
+            <!-- Left Column: Tool Card + Rent Summary -->
+            <div class="left-col">
+
+                <!-- Cordless Drill Card -->
+                <div class="tool-box">
+                    <img src="drill.png" alt="Cordless Drill" class="tool-thumb">
+
+                    <div class="tool-details">
+                        <h2>Cordless Drill</h2>
+
+                        <div class="meta-row">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.2 2.2-2.2-2.2 2.4-3z"/>
+                            </svg>
+                            <span>Drill Machine</span>
+                        </div>
+
+                        <div class="meta-row">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            <span>12 Nov 2026</span>
+                        </div>
+
+                        <div class="meta-row">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                                <circle cx="12" cy="11" r="2.2"/>
+                                <path d="M7 21h10"/>
+                            </svg>
+                            <span>Kakanad, Kochi, Kerala</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rent Summary Card -->
+                <div class="summary-box">
+                    <h3>Rent Summary</h3>
+
+                    <div class="summary-row">
+                        <span>Rental Price</span>
+                        <span>500</span>
+                    </div>
+
+                    <div class="summary-row border-line">
+                        <span class="fee-wrap">
+                            Platform Fee
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#556b6d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"/>
+                                <line x1="12" y1="11" x2="12" y2="16"/>
+                                <circle cx="12" cy="8" r="0.8" fill="#556b6d"/>
+                            </svg>
+                        </span>
+                        <span>30</span>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Rent Amount You Get</span>
+                        <span class="get-amount">470</span>
+                    </div>
+                </div>
+
+                <p class="agree-note">By publishing, you agree to follow these rental steps.</p>
+
+            </div>
+
+            <!-- Right Column: Please Read the Instructions -->
+            <div class="right-col">
+                <div class="instructions-card">
+                    <h3>Please Read the Instructions</h3>
+
+                    <ol class="steps-list">
+                        <li>
+                            <span class="step-num">1</span>
+                            <div class="step-text">
+                                <strong>Upload clear tool photos</strong>
+                                <p>Add clear photos of the tool and its current condition before publishing the listing.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="step-num">2</span>
+                            <div class="step-text">
+                                <strong>Record condition at handover</strong>
+                                <p>Ask the renter to upload photos when they receive the tool. Keep a copy too.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="step-num">3</span>
+                            <div class="step-text">
+                                <strong>Upload return photos</strong>
+                                <p>When the tool is returned, take and upload photos showing its condition.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="step-num">4</span>
+                            <div class="step-text">
+                                <strong>Report any issue in the app</strong>
+                                <p>If the tool is damaged, missing, or not working, report it with photos before closing the rental.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="step-num">5</span>
+                            <div class="step-text">
+                                <strong>Security deposit refund</strong>
+                                <p>The deposit is released after the return check is complete and any reported issue is resolved.</p>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <div class="fee-footer">
+                        <strong>30 platform fee per rental</strong>
+                        <p>You receive the rental price minus this fee.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Bottom Publish Tool Link Button -->
+        <div class="publish-wrap">
+            <a href="tool-published.html" class="publish-btn">Publish Tool</a>
+        </div>
+
+    </main>
+
+</body>
+</html>

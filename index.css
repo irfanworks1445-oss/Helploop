@@ -1,0 +1,82 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full-screen background and centering setup */
+body {
+    height: 100vh; /* Makes the page take 100% of the screen height */
+    background-color: #f3fbf7; /* Fallback light mint color */
+    background-image: url('HELPLOOP_BG_1440x1024.png'); /* Your background image */
+    background-size: cover; /* Makes the image fill the whole screen */
+    background-position: bottom center; /* Keeps the houses at the bottom */
+    background-repeat: no-repeat;
+    
+    /* Flexbox to center the content box perfectly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container holding the logo, text, and button */
+.main-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 60px; /* Pushes content slightly up so it doesn't hit the houses */
+}
+
+/* Logo + Tagline Image sizing */
+.logo-image {
+    width: 240px; /* Adjust this number to make the logo bigger or smaller */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* "A Stronger Neighbourhood Start Here" */
+.subtitle {
+    font-size: 16px;
+    color: #112627;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Dark Pill-Shaped Link Button */
+.btn-start {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b2224;
+    color: #ffffff;
+    text-decoration: none; /* Removes the default underline from the link */
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 95px; /* Top/bottom padding: 15px, Left/right padding: 95px */
+    border-radius: 50px; /* Makes the corners completely round */
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Slight color change when hovering over the button */
+.btn-start:hover {
+    background-color: #173a3d;
+}
+
+/* "Already have an account? Login" */
+.login-text {
+    font-size: 15px;
+    color: #112627;
+}
+
+.login-link {
+    color: #1ea355; /* Bright green color */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}

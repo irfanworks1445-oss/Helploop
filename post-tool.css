@@ -1,0 +1,234 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 24px 24px 50px;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 18px;
+}
+
+/* Two Column Form Grid */
+.tool-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    align-items: end;
+}
+
+.left-col,
+.right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.field-label {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+/* Photo Thumbnails & Add Photo Box */
+.photos-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.photo-thumb {
+    width: 104px;
+    height: 98px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid #84c7a7;
+    background-color: #ffffff;
+}
+
+.add-photo-box {
+    width: 104px;
+    height: 98px;
+    border-radius: 14px;
+    border: 1px solid #84c7a7;
+    background-color: rgba(240, 255, 248, 0.72);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-photo-box:hover {
+    background-color: #ffffff;
+}
+
+.add-photo-box span {
+    font-size: 11px;
+    color: #556b6d;
+    font-weight: 500;
+}
+
+/* Form Inputs */
+.pill-input {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 1px solid #84c7a7;
+    background-color: rgba(240, 255, 248, 0.88);
+    font-size: 13px;
+    color: #0c292d;
+    outline: none;
+}
+
+.pill-input::placeholder {
+    color: #849a9b;
+}
+
+.pill-input:focus {
+    border-color: #1ba664;
+    background-color: #ffffff;
+}
+
+.select-input {
+    color: #849a9b;
+    cursor: pointer;
+}
+
+.select-input:valid {
+    color: #0c292d;
+}
+
+/* Centered Publish Button */
+.submit-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+.publish-btn {
+    width: 100%;
+    max-width: 540px;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0c292d;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.publish-btn:hover {
+    opacity: 0.92;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .tool-form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

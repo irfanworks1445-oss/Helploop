@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Post a Tool</title>
+    <link rel="stylesheet" href="post-tool.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Post a Tool Content -->
+    <main class="container">
+        <h1 class="page-title">Post a Tool</h1>
+
+        <form action="#" method="POST" class="tool-form">
+            <div class="tool-form-grid">
+
+                <!-- Left Column -->
+                <div class="left-col">
+
+                    <!-- Add Tools Photos -->
+                    <div class="field-group">
+                        <label class="field-label">Add Tools Photos</label>
+                        <div class="photos-row">
+                            <img src="drill.png" alt="Drill Tool Preview 1" class="photo-thumb">
+                            <img src="drill.png" alt="Drill Tool Preview 2" class="photo-thumb">
+
+                            <label class="add-photo-box">
+                                <input type="file" accept="image/*" multiple hidden>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#556b6d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                <span>Add Photo</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Tool Name -->
+                    <div class="field-group">
+                        <label for="tool-name" class="field-label">Tool Name</label>
+                        <input type="text" id="tool-name" class="pill-input" placeholder="e.g. Cordless Drill" required>
+                    </div>
+
+                    <!-- Category -->
+                    <div class="field-group">
+                        <label for="tool-category" class="field-label">Category</label>
+                        <select id="tool-category" class="pill-input select-input" required>
+                            <option value="" selected disabled>Select category</option>
+                            <option value="drills">Drills  Drivers</option>
+                            <option value="grinders">Grinders Cutters</option>
+                            <option value="hand-tools">Hand Tools</option>
+                            <option value="ladders">Ladders  Access</option>
+                            <option value="welding">Welding  Electrical</option>
+                            <option value="gardening">Gardening Tools</option>
+                        </select>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="field-group">
+                        <label for="tool-desc" class="field-label">Description</label>
+                        <input type="text" id="tool-desc" class="pill-input" placeholder="Describe condition and usage">
+                    </div>
+
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-col">
+
+                    <!-- Rental Price -->
+                    <div class="field-group">
+                        <label for="rental-price" class="field-label">Rental Price</label>
+                        <input type="text" id="rental-price" class="pill-input" placeholder="&#8377; Enter amount / day" required>
+                    </div>
+
+                    <!-- Security Deposit -->
+                    <div class="field-group">
+                        <label for="security-deposit" class="field-label">Security Deposit</label>
+                        <input type="text" id="security-deposit" class="pill-input" placeholder="&#8377; Enter refundable deposit">
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="field-group">
+                        <label for="tool-availability" class="field-label">Availability</label>
+                        <input type="text" id="tool-availability" class="pill-input" placeholder="Available from">
+                    </div>
+
+                    <!-- Pickup Location -->
+                    <div class="field-group">
+                        <label for="pickup-location" class="field-label">Pickup Location</label>
+                        <input type="text" id="pickup-location" class="pill-input" placeholder="Enter your location" required>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Centered Publish Tool Link Button -->
+            <div class="submit-wrap">
+                <a href="rent.html" class="publish-btn">Publish Tool</a>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

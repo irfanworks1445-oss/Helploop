@@ -1,0 +1,173 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full-screen background */
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('HELPLOOP_BG_1440x1024.png');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    /* Center the two columns on screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Two-column layout container */
+.signup-wrapper {
+    width: 100%;
+    max-width: 920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-image {
+    width: 220px;
+    height: auto;
+    margin-bottom: 14px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #0c292d;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+/* Continue Using Google Pill Button */
+.google-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #f2fbf7;
+    color: #1ba664;
+    border: 1.5px solid #1ba664;
+    border-radius: 20px;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.25s ease;
+}
+
+.google-btn:hover {
+    background-color: #e3f7ee;
+}
+
+.google-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Right Column */
+.right-column {
+    flex: 1;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0c292d;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Pill-shaped input fields */
+.signup-form input {
+    width: 100%;
+    padding: 13px 20px;
+    border-radius: 20px;
+    border: 1.5px solid #1ba664;
+    background-color: rgba(240, 255, 248, 0.85);
+    font-size: 14px;
+    color: #0c292d;
+    outline: none;
+}
+
+.signup-form input::placeholder {
+    color: #5b6d6e;
+}
+
+.signup-form input:focus {
+    border-color: #0c292d;
+    background-color: #ffffff;
+}
+
+/* Dark SignUp Link Button */
+.signup-btn {
+    margin-top: 6px;
+    width: 100%;
+    padding: 13px 24px;
+    border-radius: 20px;
+    background-color: #0c292d;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.signup-btn:hover {
+    background-color: #153f45;
+}
+
+/* Login Link */
+.login-text {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #0c292d;
+}
+
+.login-link {
+    color: #1ba664;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Stack columns cleanly on smaller screens */
+@media (max-width: 768px) {
+    .signup-wrapper {
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 20px;
+    }
+}

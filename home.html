@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item active">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <!-- Exact Location Pin Icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Page Content -->
+    <main class="container">
+
+        <!-- Search Bar -->
+        <div class="search-wrapper">
+            <div class="search-box">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a9a9b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="20" y1="20" x2="16.2" y2="16.2"/>
+                </svg>
+                <input type="text" placeholder="Search for tasks,tools or people...">
+            </div>
+        </div>
+
+        <!-- Greeting Text -->
+        <section class="greeting">
+            <h1>Hi, Arjun <span>😎</span></h1>
+            <p>What do you need today</p>
+        </section>
+
+        <!-- Two Column Dashboard Grid -->
+        <section class="dashboard-grid">
+
+            <!-- Left Column -->
+            <div class="left-panel">
+
+                <!-- Top Two Big Action Cards -->
+                <div class="action-cards">
+                    <a href="post-task.html" class="action-card dark-card">
+                        <div class="action-icon">
+                            <!-- Clipboard Check Icon -->
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="4" width="14" height="16" rx="3"/>
+                                <path d="M9 9h6"/>
+                                <path d="M9 13h4"/>
+                                <path d="M15 16l1.5 1.5L19 15"/>
+                            </svg>
+                        </div>
+                        <h3>Post a Task</h3>
+                        <p>Get things done</p>
+                    </a>
+
+                    <a href="tool-owner.html" class="action-card green-card">
+                        <div class="action-icon">
+                            <!-- Power Drill Icon -->
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 7h10v6H4z"/>
+                                <path d="M14 9h4v2h-4"/>
+                                <path d="M18 10h3"/>
+                                <path d="M7 13v5h3v-5"/>
+                                <path d="M5 18h7"/>
+                            </svg>
+                        </div>
+                        <h3>My Tool</h3>
+                        <p>Find tools near you</p>
+                    </a>
+                </div>
+
+                <!-- 8 Category Boxes -->
+                <div class="category-grid">
+                    <!-- Home Repair -->
+                    <a href="#" class="cat-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 10.5L12 3l9 7.5"/>
+                            <path d="M5 9.5V20h5v-5h4v5h5V9.5"/>
+                        </svg>
+                        <span>Home Repair</span>
+                    </a>
+
+                    <!-- Cleaning -->
+                    <a href="#" class="cat-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 3h4v6h-4z"/>
+                            <path d="M7 9h10l1 11H6L7 9z"/>
+                            <path d="M9 20v-4M12 20v-4M15 20v-4"/>
+                        </svg>
+                        <span>Cleaning</span>
+                    </a>
+
+                    <!-- Moving -->
+                    <a href="#" class="cat-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 8l2-4h12l2 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8z"/>
+                            <path d="M4 8h16"/>
+                            <path d="M10 12h4"/>
+                        </svg>
+                        <span>Moving</span>
+                    </a>
+
+                    <!-- Plumbing -->
+                    <a href="#" class="cat-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.2 2.2-2.2-2.2 2.4-3z"/>
+                        </svg>
+                        <span>Plumbing</span>
+                    </a>
+
+                    <!-- Delivery -->
+                    <a href="#" class="cat-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="6" width="12" height="10" rx="1.5"/>
+                            <path d="M14 9h4l3 3v4h-7V9z"/>
+                            <circle cx="6.5" cy="17.5" r="2"/>
+                            <circle cx="17.5" cy="17.5" r="2"/>
+                        </svg>
+                        <span>Delivery</span>
+                    </a>
+
+                    <!-- Electrical -->
+                    <a href="#" class="cat-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 3v4M14 3v4"/>
+                            <path d="M7 7h10l-1 11H8L7 7z"/>
+                            <path d="M12 10l-1.5 3h3L12 16"/>
+                        </svg>
+                        <span>Electrical</span>
+                    </a>
+
+                    <!-- Gardening -->
+                    <a href="#" class="cat-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0c292d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 10l5-5 2 2-5 5"/>
+                            <path d="M14 10l-3-1-5 5c-1.5 1.5-1.5 4 0 5.5s4 1.5 5.5 0l5-5-1-3"/>
+                        </svg>
+                        <span>Gardening</span>
+                    </a>
+
+                    <!-- More -->
+                    <a href="#" class="cat-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="#0c292d">
+                            <circle cx="6" cy="12" r="1.7"/>
+                            <circle cx="12" cy="12" r="1.7"/>
+                            <circle cx="18" cy="12" r="1.7"/>
+                        </svg>
+                        <span>More</span>
+                    </a>
+                </div>
+
+                <!-- Bottom Left Banner (User will add image) -->
+                <div class="promo-banner">
+                    <img src="Group 655.png" alt="People Tools Tasks">
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-panel">
+
+                <!-- Tools Card -->
+                <div class="feature-card">
+                    <div class="feature-text">
+                        <h2>Tools in your neighbourhood</h2>
+                        <p>Rent, Use, Return, Simple</p>
+                        <a href="#" class="explore-link">Explore Tools &rarr;</a>
+                    </div>
+                    <div class="feature-img">
+                        <img src="Nine-Tool Workshop Collage.png" alt="Drill Tool">
+                    </div>
+                </div>
+
+                <!-- Tasks Card -->
+                <div class="feature-card">
+                    <div class="feature-text">
+                        <h2>Tasks in your neighbourhood</h2>
+                        <p>Do Task ,Earn Money</p>
+                        <a href="#" class="explore-link">Explore Tasks &rarr;</a>
+                    </div>
+                    <div class="feature-img">
+                        <img src="image copy 5.png" alt="Paint Roller Task">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

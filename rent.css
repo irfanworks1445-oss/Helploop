@@ -1,0 +1,340 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0fff8;
+    background-image: url('main-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #0c292d;
+}
+
+/* Top Green Header */
+.navbar {
+    background-color: #7ae374;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 44px;
+    width: auto;
+}
+
+/* White Center Navigation Pill */
+.nav-pill {
+    background-color: #ffffff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #0c292d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    color: #1ba664;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    color: #1ba664;
+}
+
+/* Right Location Pill */
+.location-badge {
+    background-color: #0c292d;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 24px 24px 50px;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 18px;
+}
+
+/* 2-Column Layout */
+.rent-grid {
+    display: grid;
+    grid-template-columns: 0.92fr 1.18fr;
+    gap: 28px;
+    align-items: stretch;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+/* Cordless Drill Card */
+.tool-box {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 16px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tool-thumb {
+    width: 118px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #b5d8c8;
+    background-color: #ffffff;
+    flex-shrink: 0;
+}
+
+.tool-details h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 8px;
+}
+
+.meta-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #0c292d;
+    margin-bottom: 5px;
+}
+
+/* Rent Summary Box */
+.summary-box {
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 16px;
+    padding: 18px 20px;
+}
+
+.summary-box h3 {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 14px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #0c292d;
+    padding-bottom: 10px;
+}
+
+.summary-row.border-line {
+    border-bottom: 1px solid #96b8b0;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.fee-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.get-amount {
+    color: #1ba664;
+    font-size: 16px;
+}
+
+.agree-note {
+    text-align: center;
+    font-size: 11.5px;
+    color: #6f8587;
+}
+
+/* Right Column: Instructions Card */
+.right-col {
+    display: flex;
+}
+
+.instructions-card {
+    width: 100%;
+    background-color: rgba(240, 255, 248, 0.9);
+    border: 1px solid #84c7a7;
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.instructions-card h3 {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #0c292d;
+    margin-bottom: 14px;
+}
+
+.steps-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.steps-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.step-num {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #d9f5e6;
+    color: #1ba664;
+    font-size: 10.5px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.step-text strong {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #0c292d;
+}
+
+.step-text p {
+    font-size: 10.5px;
+    color: #6f8587;
+    line-height: 1.35;
+    margin-top: 2px;
+}
+
+.fee-footer {
+    border-top: 1px solid #d5e6de;
+    padding-top: 12px;
+    margin-top: 14px;
+}
+
+.fee-footer strong {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #1ba664;
+}
+
+.fee-footer p {
+    font-size: 10.5px;
+    color: #6f8587;
+    margin-top: 2px;
+}
+
+/* Bottom Publish Tool Button */
+.publish-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.publish-btn {
+    width: 100%;
+    max-width: 660px;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0c292d;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.publish-btn:hover {
+    opacity: 0.92;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-pill {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .rent-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .tool-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tool-thumb {
+        width: 100%;
+        height: 150px;
+    }
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - My Wallet</title>
+    <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Wallet Content -->
+    <main class="container">
+        <h1 class="page-title">My Wallet</h1>
+
+        <section class="wallet-grid">
+
+            <!-- Left Column: Balance Card + Summary Stats -->
+            <div class="left-col">
+
+                <!-- Green Wallet Balance Card -->
+                <div class="balance-card">
+                    <span class="balance-label">Wallet Balance</span>
+                    <div class="balance-amount">&#8377;2,450</div>
+
+                    <div class="quick-actions">
+                        <button type="button" class="quick-btn">
+                            <span class="quick-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#188b54" stroke-width="2.4" stroke-linecap="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                            </span>
+                            <span>Add Money</span>
+                        </button>
+
+                        <button type="button" class="quick-btn">
+                            <span class="quick-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#188b54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9l9-5 9 5"/>
+                                    <line x1="6" y1="10" x2="6" y2="17"/>
+                                    <line x1="12" y1="10" x2="12" y2="17"/>
+                                    <line x1="18" y1="10" x2="18" y2="17"/>
+                                    <line x1="3" y1="18" x2="21" y2="18"/>
+                                </svg>
+                            </span>
+                            <span>Withdraw</span>
+                        </button>
+
+                        <button type="button" class="quick-btn">
+                            <span class="quick-icon-box">
+                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#188b54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </span>
+                            <span>Send</span>
+                        </button>
+
+                        <button type="button" class="quick-btn">
+                            <span class="quick-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#188b54">
+                                    <circle cx="6.5" cy="12" r="1.7"/>
+                                    <circle cx="12" cy="12" r="1.7"/>
+                                    <circle cx="17.5" cy="12" r="1.7"/>
+                                </svg>
+                            </span>
+                            <span>More</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3 Stats Card -->
+                <div class="stats-card">
+                    <div class="stat-item">
+                        <div class="stat-icon earnings-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M14.5 9.5a2.5 2.5 0 0 0-5 0c0 2 5 1.5 5 4a2.5 2.5 0 0 1-5 0"/>
+                                <line x1="12" y1="5.5" x2="12" y2="18.5"/>
+                            </svg>
+                        </div>
+                        <span class="stat-title">Total Earnings</span>
+                        <strong class="stat-value">&#8377;8,600</strong>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon spent-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e37c2d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 7h12l-1 13H7L6 7z"/>
+                                <path d="M9 7V5a3 3 0 0 1 6 0v2"/>
+                            </svg>
+                        </div>
+                        <span class="stat-title">Total Spent</span>
+                        <strong class="stat-value">&#8377;5,900</strong>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon deposit-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 12 11 14 15 10"/>
+                            </svg>
+                        </div>
+                        <span class="stat-title">Refundable Deposit</span>
+                        <strong class="stat-value">&#8377;1,000</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Recent Transactions + About Your Wallet -->
+            <div class="right-col">
+
+                <div class="transactions-card">
+                    <div class="tx-header">
+                        <h2>Recent Transactions</h2>
+                        <a href="#" class="view-all-link">View All &rarr;</a>
+                    </div>
+
+                    <div class="tx-list">
+                        <!-- 1 -->
+                        <div class="tx-item">
+                            <span class="tx-icon credit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <polyline points="19 12 12 19 5 12"/>
+                                </svg>
+                            </span>
+                            <div class="tx-info">
+                                <h3>Task Payment Received</h3>
+                                <p>TV Wall Mount Installation</p>
+                            </div>
+                            <div class="tx-right">
+                                <span class="tx-amount plus">+ &#8377;600</span>
+                                <span class="tx-time">Today, 4:22 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="tx-item">
+                            <span class="tx-icon credit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <polyline points="9 12 11 14 15 10"/>
+                                </svg>
+                            </span>
+                            <div class="tx-info">
+                                <h3>Security Deposit (Refund)</h3>
+                                <p>Ladder Rental</p>
+                            </div>
+                            <div class="tx-right">
+                                <span class="tx-amount plus">+ &#8377;500</span>
+                                <span class="tx-time">12 Feb 2025</span>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="tx-item">
+                            <span class="tx-icon debit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e04f5f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="19" x2="12" y2="5"/>
+                                    <polyline points="5 12 12 5 19 12"/>
+                                </svg>
+                            </span>
+                            <div class="tx-info">
+                                <h3>Tool Rental Payment</h3>
+                                <p>Drill Machine (2 Days)</p>
+                            </div>
+                            <div class="tx-right">
+                                <span class="tx-amount minus">- &#8377;450</span>
+                                <span class="tx-time">Yesterday, 7:10 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="tx-item">
+                            <span class="tx-icon credit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <polyline points="19 12 12 19 5 12"/>
+                                </svg>
+                            </span>
+                            <div class="tx-info">
+                                <h3>Earnings Withdrawal</h3>
+                                <p>To bank account **** 4812</p>
+                            </div>
+                            <div class="tx-right">
+                                <span class="tx-amount plus">- &#8377;2,000</span>
+                                <span class="tx-time">10 Feb 2025</span>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="tx-item">
+                            <span class="tx-icon credit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <polyline points="19 12 12 19 5 12"/>
+                                </svg>
+                            </span>
+                            <div class="tx-info">
+                                <h3>Task Payment Received</h3>
+                                <p>TV Wall Mount Installation</p>
+                            </div>
+                            <div class="tx-right">
+                                <span class="tx-amount plus">+ &#8377;600</span>
+                                <span class="tx-time">Today, 4:22 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="tx-item">
+                            <span class="tx-icon credit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <polyline points="9 12 11 14 15 10"/>
+                                </svg>
+                            </span>
+                            <div class="tx-info">
+                                <h3>Security Deposit (Refund)</h3>
+                                <p>Ladder Rental</p>
+                            </div>
+                            <div class="tx-right">
+                                <span class="tx-amount plus">+ &#8377;500</span>
+                                <span class="tx-time">12 Feb 2025</span>
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="tx-item">
+                            <span class="tx-icon debit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e04f5f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="19" x2="12" y2="5"/>
+                                    <polyline points="5 12 12 5 19 12"/>
+                                </svg>
+                            </span>
+                            <div class="tx-info">
+                                <h3>Tool Rental Payment</h3>
+                                <p>Drill Machine (2 Days)</p>
+                            </div>
+                            <div class="tx-right">
+                                <span class="tx-amount minus">- &#8377;450</span>
+                                <span class="tx-time">Yesterday, 7:10 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="tx-item last">
+                            <span class="tx-icon credit">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <polyline points="19 12 12 19 5 12"/>
+                                </svg>
+                            </span>
+                            <div class="tx-info">
+                                <h3>Earnings Withdrawal</h3>
+                                <p>To bank account **** 4812</p>
+                            </div>
+                            <div class="tx-right">
+                                <span class="tx-amount plus">- &#8377;2,000</span>
+                                <span class="tx-time">10 Feb 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Your Wallet Card -->
+                <a href="#" class="about-wallet-card">
+                    <div class="about-left">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1ba664" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                        <div>
+                            <h3>About Your Wallet</h3>
+                            <p>Receive task payments, rental earnings, and manage deposits securely in your HELPLOOP wallet.</p>
+                        </div>
+                    </div>
+                    <span class="about-chevron">&rsaquo;</span>
+                </a>
+
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

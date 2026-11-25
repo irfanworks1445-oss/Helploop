@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpLoop - Task Status</title>
+    <link rel="stylesheet" href="task-status.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="nav-logo.png" alt="HelpLoop" class="nav-logo">
+        </div>
+
+        <nav class="nav-pill">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="task.html" class="nav-item">Tasks</a>
+            <a href="tool.html" class="nav-item active">Tools</a>
+            <a href="messages.html" class="nav-item">Messages</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+        </nav>
+
+        <div class="location-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z"/>
+                <circle cx="12" cy="11" r="2.2"/>
+                <path d="M7 21h10"/>
+            </svg>
+            <span>Kochi,Kerala</span>
+        </div>
+    </header>
+
+    <!-- Main Task Status Content -->
+    <main class="container">
+
+        <h1 class="task-title">TV Wall Mount Installation</h1>
+
+        <!-- Task Preview Photos -->
+        <div class="photos-row">
+            <img src="tv.png" alt="TV Wall Mount View 1" class="status-photo">
+            <img src="tv.png" alt="TV Wall Mount View 2" class="status-photo">
+        </div>
+
+        <!-- Status Timeline Grid (2 Columns) -->
+        <section class="status-grid">
+
+            <!-- Left Column -->
+            <div class="status-col">
+
+                <!-- 1. Task Posted -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="check-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <h3>Task Posted</h3>
+                                <p>Your task has been posted successfully.</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge completed">Completed</span>
+                    </div>
+                </div>
+
+                <!-- 2. Worker Confirmed -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="check-circle">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <h3>Worker Confirmed</h3>
+                                <p>A worker has accepted your task.</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge completed">Completed</span>
+                    </div>
+
+                    <div class="card-action-center">
+                        <a href="worker-details.html" class="worker-btn">View Worker Details</a>
+                    </div>
+                </div>
+
+                <!-- 3. Worker on the Way -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="empty-circle"></span>
+                            <div>
+                                <h3>Worker on the Way</h3>
+                                <p>The assigned worker is heading to your location.</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge upcoming">Upcoming</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="status-col">
+
+                <!-- 4. Task in Progress -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="empty-circle"></span>
+                            <div>
+                                <h3>Task in Progress</h3>
+                                <p>The worker has started the job.</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge pending">Pending</span>
+                    </div>
+                </div>
+
+                <!-- 5. Task Completed -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="empty-circle"></span>
+                            <div>
+                                <h3>Task Completed</h3>
+                                <p>The worker marks the job complete.</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge pending">Pending</span>
+                    </div>
+                </div>
+
+                <!-- 6. Waiting for Confirmation -->
+                <div class="status-card">
+                    <div class="status-top">
+                        <div class="status-left">
+                            <span class="empty-circle"></span>
+                            <div>
+                                <h3>Waiting for Confirmation</h3>
+                                <p>The Worker Waiting for your confirmation</p>
+                            </div>
+                        </div>
+                        <span class="pill-badge pending">Pending</span>
+                    </div>
+
+                    <div class="card-action-center">
+                        
+                        <a href="confirm-task.html" class="confirm-btn">Confirm</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
